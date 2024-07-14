@@ -132,6 +132,7 @@ $(function () {
 
   // Contact Page
   $('#contactBtn').click(function () {
+    searchContainer.html('');
     contact();
   });
 });
