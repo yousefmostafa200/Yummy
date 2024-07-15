@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  color: #ffffffdb;
+  background-color: #000;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.8px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 1.2px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+i {
+  cursor: pointer;
+}
+
+.loadingScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 111;
+  background-color: #000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sideBar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  z-index: 99;
+  background-color: #000;
+  color: #fff;
+}
+
+.sideBar a {
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.navLinks li {
+  padding-block: 8px;
+  position: relative;
+}
+
+.navLinks a:hover {
+  color: #fdcf11;
+}
+
+.copyrights p {
+  max-width: 200px;
+}
+
+.logo {
+  width: 50px;
+}
+
+.area i {
+  cursor: default !important;
+}
+
+.data {
+  min-height: 100vh;
+  background-color: #000;
+}
+
+.item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #f9f6f6ca;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: top 350ms ease-in-out;
+}
+
+.overlay h2 {
+  color: black;
+}
+
+.item:hover .overlay {
+  top: 0;
+}
+
+.inputByName,
+.inputByLetter {
+  position: relative;
+  z-index: 9999;
+}
+
+input::placeholder {
+  color: #ffffff96 !important;
+}
+
+.area,
+.ingredient {
+  cursor: pointer;
+}
+
+@media (max-width: 870px) {
+  .sideBar .logo {
+    width: 30px;
+  }
+}
+
+@media (max-width: 879px) {
+  .overlay h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 740px) {
+  :root {
+    font-size: 14px;
+  }
+  .outerBar {
+    width: 50px;
+  }
+}
+
+@media (max-width: 430px) {
+  :root {
+    font-size: 10px;
+  }
+  .overlay h2 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 310px) {
+  :root {
+    font-size: 10px;
+  }
+  .overlay h2 {
+    font-size: 12px;
+  }
+}
